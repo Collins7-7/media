@@ -9,18 +9,103 @@
       "name": "Muiruri"
     },
     {
-      "name": "Erik Schumm III",
-      "id": 3
-    },
-    {
       "name": "John Jones",
       "id": 4
     },
     {
-      "name": "Elbert Fay-Deckow",
-      "id": 11
+      "name": "Ismael Smitham",
+      "id": 5
+    },
+    {
+      "name": "Bethany Doyle",
+      "id": 6
+    },
+    {
+      "name": "Jon Hauck",
+      "id": 7
     }
   ],
-  "albums": [],
+  "albums": [
+    {
+      "id": 10,
+      "title": "Biking",
+      "userId": 1
+    },
+    {
+      "userId": 1,
+      "title": "Tasty Metal Soap",
+      "id": 11
+    },
+    {
+      "userId": 1,
+      "title": "Practical Concrete Table",
+      "id": 12
+    },
+    {
+      "userId": 1,
+      "title": "Electronic Cotton Computer",
+      "id": 13
+    },
+    {
+      "userId": 1,
+      "title": "Modern Rubber Chips",
+      "id": 14
+    },
+    {
+      "userId": 2,
+      "title": "Handcrafted Metal Salad",
+      "id": 15
+    },
+    {
+      "userId": 2,
+      "title": "Gorgeous Metal Pizza",
+      "id": 16
+    },
+    {
+      "userId": 1,
+      "title": "Ergonomic Soft Pants",
+      "id": 17
+    },
+    {
+      "userId": 1,
+      "title": "Fantastic Rubber Chair",
+      "id": 18
+    },
+    {
+      "userId": 2,
+      "title": "Sleek Granite Soap",
+      "id": 19
+    },
+    {
+      "userId": 4,
+      "title": "Elegant Bronze Gloves",
+      "id": 20
+    },
+    {
+      "userId": 4,
+      "title": "Gorgeous Fresh Pizza",
+      "id": 21
+    },
+    {
+      "userId": 4,
+      "title": "Oriental Cotton Soap",
+      "id": 22
+    },
+    {
+      "userId": 4,
+      "title": "Licensed Steel Gloves",
+      "id": 23
+    },
+    {
+      "userId": 4,
+      "title": "Sleek Wooden Chips",
+      "id": 24
+    },
+    {
+      "userId": 1,
+      "title": "Handcrafted Wooden Cheese",
+      "id": 25
+    }
+  ],
   "photos": []
 }
