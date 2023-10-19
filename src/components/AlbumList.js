@@ -1,11 +1,11 @@
 import React from "react";
 import { useFetchAlbumsQuery, useAddAlbumMutation } from "../store";
 import Skeleton from "./Skeleton";
-import ExpandablePanel from "./ExpandablePanel";
+import AlbumListItem from "./AlbumListItem";
 import Button from "./Button";
 
 function AlbumList({ user }) {
-  const { data, error, isLoading } = useFetchAlbumsQuery(user);
+  const { data, error, isFetching } = useFetchAlbumsQuery(user);
 
   const [addAlbum, results] = useAddAlbumMutation();
 
@@ -15,18 +15,13 @@ function AlbumList({ user }) {
 
   let content;
 
-  if (isLoading) {
-    content = <Skeleton times={3} />;
+  if (isFetching) {
+    content = <Skeleton className="h-3 w-full" times={3} />;
   } else if (error) {
     content = <div>Error, something went wrong.</div>;
   } else {
     content = data.map((album) => {
-      const header = <div>{album.title}</div>;
-      return (
-        <ExpandablePanel key={album.id} header={header}>
-          The photos contained in the album.
-        </ExpandablePanel>
-      );
+      return <AlbumListItem key={album.id} album={album}></AlbumListItem>;
     });
   }
 
